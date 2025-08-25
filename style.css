@@ -1,0 +1,101 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+}
+.main-center {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-card {
+    background: #fff;
+    padding: 32px 28px 24px 28px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    width: 100%;
+    max-width: 400px;
+}
+h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 28px;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #b0c4de;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.2s;
+    background: #f7fbff;
+    width: 100%;
+    box-sizing: border-box;
+}
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+button {
+    padding: 12px 20px;
+    background: linear-gradient(90deg, #007bff 60%, #0056b3 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(0,123,255,0.08);
+    width: 100%;
+    box-sizing: border-box;
+}
+button:hover {
+    background: linear-gradient(90deg, #0056b3 60%, #007bff 100%);
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    background: #f9f9f9;
+    margin-bottom: 12px;
+    padding: 14px 18px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    font-size: 16px;
+    word-break: break-all;
+}
+@media (max-width: 500px) {
+    .contact-card {
+        padding: 18px 8px 12px 8px;
+        border-radius: 10px;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
+    input, button {
+        font-size: 14px;
+        padding: 8px;
+    }
+    li {
+        font-size: 14px;
+        padding: 10px 8px;
+    }
+}
