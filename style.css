@@ -82,6 +82,71 @@ li {
     font-size: 16px;
     word-break: break-all;
 }
+/* Contact item layout and actions */
+.contact-info {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-info { min-width: 0; }
+.contact-name, .contact-phone {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+.contact-sep {
+    color: #a0a0a0;
+}
+.contact-actions {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+.contact-actions .btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    background: #e9f2ff;
+    color: #0b62d6;
+    white-space: nowrap;
+    flex: 0 0 auto;
+    width: auto; /* override any generic 100% width rules */
+}
+.contact-actions .btn:hover {
+    background: #d7e9ff;
+}
+.contact-actions .btn.danger {
+    background: #ffe9e9;
+    color: #c0392b;
+}
+.contact-actions .btn.danger:hover {
+    background: #ffd6d6;
+}
+.contact-actions .btn.light {
+    background: #f1f1f1;
+    color: #333;
+}
+li.editing {
+    background: #eef6ff;
+}
+.edit-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    width: 100%;
+    margin-right: 12px;
+}
+.edit-fields input {
+    padding: 8px;
+    border: 1px solid #b0c4de;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #fff;
+}
 @media (max-width: 500px) {
     .contact-card {
         padding: 18px 8px 12px 8px;
